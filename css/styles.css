@@ -26,7 +26,7 @@ Table Of Contents:
 Colors:
 - Backgrounds, navbar - black #000000
 - Backgrounds - light gray #f5f5f5
-- Buttons, icons - red #b8dedd
+- Buttons, icons - red #c2337b
 - Headings text - black #000000
 - Body text - dark gray #6b747b
 ******************************************/
@@ -137,7 +137,7 @@ a:hover {
 }
 
 .red {
-	color: #b8dedd;
+	color: #c2337b;
 }
 
 .bg-gray {
@@ -151,15 +151,15 @@ a:hover {
 	margin-top: 0.75rem;
 	margin-bottom: 0.75rem;
 	border: none;
-	background-color: #b8dedd;
+	background-color: #c2337b;
 }
 
 .btn-solid-reg {
 	display: inline-block;
 	padding: 1.375rem 2.25rem 1.375rem 2.25rem;
-	border: 1px solid #b8dedd;
+	border: 1px solid #c2337b;
 	border-radius: 32px;
-	background-color: #b8dedd;
+	background-color: #c2337b;
 	color: #ffffff;
 	font-weight: 600;
 	font-size: 0.875rem;
@@ -170,16 +170,16 @@ a:hover {
 
 .btn-solid-reg:hover {
 	background-color: transparent;
-	color: #b8dedd; /* needs to stay here because of the color property of a tag */
+	color: #c2337b; /* needs to stay here because of the color property of a tag */
 	text-decoration: none;
 }
 
 .btn-solid-lg {
 	display: inline-block;
 	padding: 1.625rem 2.625rem 1.625rem 2.625rem;
-	border: 1px solid #b8dedd;
+	border: 1px solid #c2337b;
 	border-radius: 32px;
-	background-color: #b8dedd;
+	background-color: #c2337b;
 	color: #ffffff;
 	font-weight: 600;
 	font-size: 0.875rem;
@@ -190,7 +190,7 @@ a:hover {
 
 .btn-solid-lg:hover {
 	background-color: transparent;
-	color: #b8dedd; /* needs to stay here because of the color property of a tag */
+	color: #c2337b; /* needs to stay here because of the color property of a tag */
 	text-decoration: none;
 }
 
@@ -359,9 +359,9 @@ input[type='checkbox'] {
 	display: inline-block;
 	width: 100%;
 	height: 3.25rem;
-	border: 1px solid #b8dedd;
+	border: 1px solid #c2337b;
 	border-radius: 32px;
-	background-color: #b8dedd;
+	background-color: #c2337b;
 	color: #ffffff;
 	font-weight: 600;
 	font-size: 0.875rem;
@@ -542,7 +542,7 @@ input[type='checkbox'] {
 }
 
 .navbar .fa-stack-2x {
-	color: #b8dedd;
+	color: #c2337b;
 	transition: all 0.2s ease;
 }
 
@@ -556,7 +556,7 @@ input[type='checkbox'] {
 }
 
 .navbar .fa-stack:hover .fa-stack-1x {
-	color: #b8dedd;
+	color: #c2337b;
 }
 
 .navbar .navbar-toggler {
@@ -597,7 +597,7 @@ input[type='checkbox'] {
 .header .services {
 	padding-top: 4.5rem;
 	padding-bottom: 0.375rem;
-	background: linear-gradient(to bottom right, #dcfa78, #96ebc2);
+	background: linear-gradient(to bottom right, #4b00d7, #fa4c50);
 }
 
 .header .card {
@@ -713,7 +713,7 @@ input[type='checkbox'] {
 	margin-bottom: 1rem;
 	margin-left: 0;
 	border: none;
-	background-color: #b8dedd;
+	background-color: #c2337b;
 }
 
 .lightbox-basic h4 {
@@ -726,7 +726,7 @@ input[type='checkbox'] {
 }
 
 .lightbox-basic .list-unstyled .fas {
-	color: #b8dedd;
+	color: #c2337b;
 	font-size: 0.875rem;
 	line-height: 1.75rem;
 }
@@ -750,7 +750,7 @@ input[type='checkbox'] {
 }
 
 .lightbox-basic .btn-solid-reg.mfp-close:hover {
-	color: #b8dedd;
+	color: #c2337b;
 }
 /* end of action Button */
 
@@ -913,7 +913,7 @@ input[type='checkbox'] {
 	color: #000000;
 }
 
-ebc
+
 /*****************/
 /*     About     */
 /*****************/
@@ -942,7 +942,7 @@ ebc
 .basic-7 {
 	padding-top: 9rem;
 	padding-bottom: 9rem;
-	background: linear-gradient(to bottom right, #dcfa78, #96ebc2);
+	background: linear-gradient(to bottom right, #4b00d7, #fa4c50);
 	text-align: center;
 }
 
@@ -954,7 +954,7 @@ ebc
 .basic-7 .btn-solid-lg {
 	border-color: #ffffff;
 	background-color: #ffffff;
-	color: #b8dedd;
+	color: #c2337b;
 }
 
 .basic-7 .btn-solid-lg:hover {
@@ -1071,7 +1071,7 @@ ebc
 }
 
 .footer .footer-col.third .fa-stack:hover .fa-stack-2x {
-    color: #b8dedd;
+    color: #c2337b;
 }
 
 .footer .footer-col.third .fa-stack:hover .fa-stack-1x {
@@ -1113,7 +1113,7 @@ a.back-to-top {
 }
 
 a:hover.back-to-top {
-	background-color: #b8dedd;
+	background-color: #c2337b;
 }
 
 
@@ -1155,7 +1155,7 @@ a:hover.back-to-top {
 }
 
 .ex-cards-1 .card .fa-stack-2x {
-	color: #b8dedd;
+	color: #c2337b;
 }
 
 .ex-cards-1 .card .fa-stack-1x {
