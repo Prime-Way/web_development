@@ -34,6 +34,10 @@
 
     <!-- Favicon  -->
     <link rel="icon" href="images/favicon.png">
+
+    <!-- Ajax jquery-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
 </head>
 
 <body data-spy="scroll" data-target=".fixed-top">
@@ -325,8 +329,9 @@
                             <div class="bullet">1</div>
                             <div class="media-body">
                                 <h4>specialized Expertise</h4>
-                                <p>we've made it ourmission to provide the best websight development services in the industry. Besides
-                                    the firm  itself we also provide branding and strategy services to create solid
+                                <p>we've made it ourmission to provide the best websight development services in the
+                                    industry. Besides
+                                    the firm itself we also provide branding and strategy services to create solid
                                     foundation on your buisness </p>
                             </div>
                         </li>
@@ -334,8 +339,11 @@
                             <div class="bullet">2</div>
                             <div class="media-body">
                                 <h4>Ecommerce and Digital-Marketing</h4>
-                                <p>Our partnership with Ecommerce stores enables us to stay on top of all platform updates and
-                                    prepare them for installation in your own online store. we have to support them for thier buisness Growth Through Digitalmarketing and social media marketting, We're a good development team so we can solve any
+                                <p>Our partnership with Ecommerce stores enables us to stay on top of all platform
+                                    updates and
+                                    prepare them for installation in your own online store. we have to support them for
+                                    thier buisness Growth Through Digitalmarketing and social media marketting, We're a
+                                    good development team so we can solve any
                                     difficult situations that can occur after major updates</p>
                             </div>
                         </li>
@@ -346,7 +354,7 @@
                                 <p>We take pride in delivering projects before the deadline to extend the pre-launch
                                     testing period. This ensures a smooth user experience and it also helps with
                                     bringing visitors back. You can check out or <a class="red page-scroll"
-                                        href="#projects">projects section</a> 
+                                        href="#projects">projects section</a>
                                 </p>
                             </div>
                         </li>
@@ -388,7 +396,7 @@
                                                     Shopify implementation. Their specialized experience helped the
                                                     project and made it available 2 weeks prior the launch date for
                                                     extensive testing"</p>
-                                        <!-- 
+                                                <!-- 
                                                 <div class="testimonial-author">Michael Smith - General Manager</div>
                                         -->
                                             </div> <!-- end of text-container -->
@@ -415,7 +423,7 @@
                                                     Shopify implementation. Their specialized experience helped the
                                                     project and made it available 2 weeks prior the launch date for
                                                     extensive testing"</p>
-                                            <!--
+                                                <!--
                                                 <div class="testimonial-author">Ronnie Blake - Sales Manager</div>
                                             -->
                                             </div> <!-- end of text-container -->
@@ -443,7 +451,7 @@
                                                     Shopify implementation. Their specialized experience helped the
                                                     project and made it available 2 weeks prior the launch date for
                                                     extensive testing"</p>
-                                        <!--    
+                                                <!--    
                                             <div class="testimonial-author">Nicole Richter - Development Manager</div>
                                         -->
                                             </div> <!-- end of text-container -->
@@ -539,17 +547,21 @@
                 <div class="col-lg-12">
 
                     <!-- Contact Form -->
-                    <form id="contactForm">
+                    <form id="contactForm" autocomplete="off" name="google-sheet" method="POST">
                         <div class="form-group">
-                            <input type="text" class="form-control-input" id="cname" required>
+                            <input type="text" class="form-control-input" id="cname" name="fname"required>
                             <label class="label-control" for="cname">Name</label>
                         </div>
                         <div class="form-group">
-                            <input type="email" class="form-control-input" id="cemail" required>
+                            <input type="email" class="form-control-input" id="cemail" name="Email" required>
                             <label class="label-control" for="cemail">Email</label>
                         </div>
                         <div class="form-group">
-                            <input type="text" class="form-control-input" id="text" required>
+                            <input type="number" class="form-control-input" id="Phone" name="Phone">
+                            <label class="label-control" for="Phone">Phone</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control-input" id="message" name="Message" required>
                             <label class="label-control" for="text">Message Type..</label>
                         </div>
                         <div class="form-group">
@@ -557,7 +569,7 @@
                         </div>
                     </form>
                     <!-- end of contact form -->
-
+ 
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
         </div> <!-- end of container -->
@@ -635,6 +647,17 @@
     </div> <!-- end of copyright -->
     <!-- end of copyright -->
 
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyWZbrEZfRAf560rgSLYrSbWT2e9KgsSTKpRs06gwg-pJ5MuOp5uuO_2xN2VYUhqJ-5hA/exec'
+        const form = document.forms['google-sheet']
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon..."))
+            .catch(error => console.error('Error!', error.message))
+        })
+    </script>
 
     <!-- Scripts -->
     <script src="js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
@@ -643,6 +666,7 @@
     <script src="js/swiper.min.js"></script> <!-- Swiper for image and text sliders -->
     <script src="js/jquery.magnific-popup.js"></script> <!-- Magnific Popup for lightboxes -->
     <script src="js/scripts.js"></script> <!-- Custom scripts -->
+    
 </body>
 
 </html>
