@@ -1007,7 +1007,8 @@ input[type='checkbox'] {
 	color: #dad5d5;
 }
 
-.form-1 .form-control-input {
+.form-1 .form-control-input 
+{
 	border: 1px solid #585757;
 	background-color: #3a3939;
 	color: #dad5d5;
