@@ -328,11 +328,10 @@
                         <li class="media">
                             <div class="bullet">1</div>
                             <div class="media-body">
-                                <h4>specialized Expertise</h4>
-                                <p>we've made it ourmission to provide the best websight development services in the
-                                    industry. Besides
-                                    the firm itself we also provide branding and strategy services to create solid
-                                    foundation on your buisness </p>
+                                <h4>Specialized Expertise</h4>
+                                <p>We've made it ourmission to provide the best websight development services in the
+                                    industry. Besides the firm itself we also provide branding and strategy services to
+                                    create solid foundation on your buisness </p>
                             </div>
                         </li>
                         <li class="media">
@@ -340,11 +339,10 @@
                             <div class="media-body">
                                 <h4>Ecommerce and Digital-Marketing</h4>
                                 <p>Our partnership with Ecommerce stores enables us to stay on top of all platform
-                                    updates and
-                                    prepare them for installation in your own online store. we have to support them for
-                                    thier buisness Growth Through Digitalmarketing and social media marketting, We're a
-                                    good development team so we can solve any
-                                    difficult situations that can occur after major updates</p>
+                                    updates and prepare them for installation in your own online store. we have to
+                                    support them for thier buisness Growth Through Digitalmarketing and social media
+                                    marketting, We're a good development team so we can solve any difficult situations
+                                    that can occur after major updates</p>
                             </div>
                         </li>
                         <li class="media">
@@ -354,7 +352,7 @@
                                 <p>We take pride in delivering projects before the deadline to extend the pre-launch
                                     testing period. This ensures a smooth user experience and it also helps with
                                     bringing visitors back. You can check out or <a class="red page-scroll"
-                                        href="#projects">projects section</a>
+                                    href="#projects">projects section</a>
                                 </p>
                             </div>
                         </li>
@@ -549,7 +547,7 @@
                     <!-- Contact Form -->
                     <form id="contactForm" autocomplete="off" name="google-sheet" method="POST">
                         <div class="form-group">
-                            <input type="text" class="form-control-input" id="cname" name="fname"required>
+                            <input type="text" class="form-control-input" id="cname" name="fname" required>
                             <label class="label-control" for="cname">Name</label>
                         </div>
                         <div class="form-group">
@@ -569,7 +567,7 @@
                         </div>
                     </form>
                     <!-- end of contact form -->
- 
+
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
         </div> <!-- end of container -->
@@ -648,14 +646,18 @@
     <!-- end of copyright -->
 
     <script>
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbyWZbrEZfRAf560rgSLYrSbWT2e9KgsSTKpRs06gwg-pJ5MuOp5uuO_2xN2VYUhqJ-5hA/exec'
+        const scriptURL =
+            'https://script.google.com/macros/s/AKfycbyWZbrEZfRAf560rgSLYrSbWT2e9KgsSTKpRs06gwg-pJ5MuOp5uuO_2xN2VYUhqJ-5hA/exec'
         const form = document.forms['google-sheet']
-      
+
         form.addEventListener('submit', e => {
-          e.preventDefault()
-          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-            .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon..."))
-            .catch(error => console.error('Error!', error.message))
+            e.preventDefault()
+            fetch(scriptURL, {
+                    method: 'POST',
+                    body: new FormData(form)
+                })
+                .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon..."))
+                .catch(error => console.error('Error!', error.message))
         })
     </script>
 
@@ -666,7 +668,7 @@
     <script src="js/swiper.min.js"></script> <!-- Swiper for image and text sliders -->
     <script src="js/jquery.magnific-popup.js"></script> <!-- Magnific Popup for lightboxes -->
     <script src="js/scripts.js"></script> <!-- Custom scripts -->
-    
+
 </body>
 
 </html>
